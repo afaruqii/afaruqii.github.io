@@ -55,6 +55,7 @@ jobs:
 
   CNAME population:
     name: CNAME
+    needs: deploy
     runs-on: ubuntu-latest
     steps:
     - name: add CNAME file
