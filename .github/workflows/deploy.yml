@@ -53,7 +53,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
 
-    -- name: add CNAME file
+    - name: add CNAME file
       run: echo www.afaruqi.com > CNAME 
        
 
