@@ -27,8 +27,6 @@ jobs:
     
     - name: Build
       run: npm run build
-    - name: add CNAME
-      run: echo www.afaruqi.com > CNAME 
 
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
@@ -54,5 +52,8 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
+
+    -- name: add CNAME file
+      run: echo www.afaruqi.com > CNAME 
        
 
