@@ -8,17 +8,15 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           <h1>Welcome to Ahmad's Personal Website</h1>
-          <h2>What's poppinggg!</h2>
+          <h2>What's poppinggg!</h2> 
 
 
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/ahmad-faruqi/"
         >
-          Learn React
+          My LinkedIn Page
         </a>
       </header>
     </div>
