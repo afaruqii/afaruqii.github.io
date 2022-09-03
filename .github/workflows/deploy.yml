@@ -53,7 +53,11 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
 
+  CNAME population:
+    name: CNAME
+    runs-on: ubuntu-latest
     - name: add CNAME file
-      run: echo www.afaruqi.com > CNAME 
+      run: echo "www.afaruqi.com" > CNAME
+      publish_dir: ./build
        
 
