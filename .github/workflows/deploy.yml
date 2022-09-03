@@ -60,7 +60,5 @@ jobs:
     steps:
     - name: add CNAME file
       run: echo "www.afaruqi.com" > CNAME
-      with:
-        publish_dir: ./build
        
 
