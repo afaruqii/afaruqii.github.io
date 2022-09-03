@@ -27,6 +27,8 @@ jobs:
     
     - name: Build
       run: npm run build
+    - name: add CNAME
+      run: echo www.afaruqi.com > CNAME 
 
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
