@@ -56,8 +56,10 @@ jobs:
   CNAME population:
     name: CNAME
     runs-on: ubuntu-latest
+    steps:
     - name: add CNAME file
       run: echo "www.afaruqi.com" > CNAME
-      publish_dir: ./build
+      with:
+        publish_dir: ./build
        
 
