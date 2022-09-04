@@ -4,7 +4,13 @@ import { ReactTerminal } from 'react-terminal';
 import { Fab } from '@mui/material';
 import LinkedIn from '@mui/icons-material/LinkedIn';
 import { Twitter } from '@mui/icons-material';
+import WelcomeMessage from './terminal/WelcomeMessage.jsx';
+import help from './terminal/help';
+import whoami from './terminal/whoami';
 function App() {
+
+ 
+
 
   const externalURLNavigator = (link, prompt) => {
     let tID = setTimeout(function () {
@@ -14,21 +20,24 @@ function App() {
   return prompt
   };
   const commands = {
-    whoami: "Ahmad Faruqi",
+    whoami: whoami,
+    help:help,
     twitter :  () =>  `${externalURLNavigator("https://twitter.com/afaruqii", "to the bird app we go...")}` ,
     linkedin: () => externalURLNavigator("https://linkedin.com/in/ahmad-faruqi/", "LinkedIn? coming right up!" ),
-    cd: (directory) => `changed path to ${directory}`,
-    
+    tich: () => externalURLNavigator("https://www.bluenile.com/ca/wedding-rings", "Aa gayi meri tich?" )
     
    }
    
-  
   return (
     <div className="App" style={{background:"grey", height:"100vh"}}>
     <br>
     </br>
       <div style={{width:"900px", height:"600px", margin:"auto"}}>
-       <ReactTerminal welcomeMessage={`Welcome! For more information, type "whoami" `} commands={commands} theme="dracula" prompt="~"/>
+       <ReactTerminal 
+       welcomeMessage={WelcomeMessage} 
+       commands={commands} 
+       theme="dracula" 
+       prompt={<span style={{color:"deeppink", fontWeight: "700"}}>~</span>}/>
        </div>
         <br>
         </br>
