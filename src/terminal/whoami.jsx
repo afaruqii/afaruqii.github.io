@@ -17,7 +17,7 @@ const whoami = (
       }}
     >
       <h2 style={{ textAlign: "center" }}>Hi!</h2>
-      I'm <span style={{ fontWeight: "800" }}>Ahmad🧑🏻‍💻</span>! I'm a new graduate from {" "}
+      I'm <span style={{ fontWeight: "800" }} >Ahmad<span role="img" aria-label="coder">🧑🏻‍💻</span></span>! I'm a new graduate from {" "}
       <Link target="_blank" href="https://www.csie.ntu.edu.tw/">
         Lassonde School of Engineering- York University
       </Link>
