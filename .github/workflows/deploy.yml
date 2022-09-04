@@ -53,12 +53,5 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
 
-  cname_population:
-    name: CNAME Population
-    needs: deploy
-    runs-on: ubuntu-latest
-    steps:
-    - name: add CNAME file
-      run: echo "www.afaruqi.com" > CNAME
        
 
